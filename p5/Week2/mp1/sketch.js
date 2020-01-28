@@ -2,7 +2,7 @@ function setup() {
   // put setup code here
   createCanvas(800, 800);
   ellipseMode(CENTER);
-  ellipseMode(CENTER);
+
 
 }
 
@@ -13,30 +13,76 @@ function draw() {
 
 
   if (mouseIsPressed) {
-    fill(210, 105, 3)
+
+//horns
+    //arc(389, 237, 500, 500, 0, PI + QUARTER_PI, PIE)
+
+
+//face
+    fill(178, 34, 34)
+    stroke(0)
     ellipse(400, 400, 400, 400);
+
 
     //nosefill('black')
       fill(0);
       noStroke(0);
-      ellipse(300, 318, 60, 40);
+      ellipse(347, 430, 66, 45);
 
       fill(0)
       noStroke(0)
-      ellipse(380, 318, 60, 40);
+      ellipse(435, 430, 66, 45);
 
     noFill(0);
     stroke(3);
-      arc(380, 360, 80, 80, 106, 35 + QUARTER_PI, OPEN);
+      arc(389, 468, 90, 80, 106, 35 + QUARTER_PI, OPEN);
 
-      noFill(0);
-      stroke(3);
-        arc(290, 360, 80, 80, 106, 35 + QUARTER_PI, OPEN);
+
+
 //eyetwitch//
         noFill(0);
         stroke(0);
         strokeWeight(9);
-        arc(262, 292, 150, 100, 500, 376 );}
+      //  arc(344, 409, 150, 100, 500, 376 );
+
+
+
+        //eyeballs//
+            fill('white');
+            stroke(0);
+            strokeWeight(5);
+            arc(334, 323, 80, 80, 5, 5);
+
+               fill('white');
+               stroke(0);
+               strokeWeight(5);
+              arc(480, 319, 80, 80, 5, 5 );
+
+
+        //eyes//
+            fill(0);
+            noStroke(0);
+            ellipse(340, 323, 50, 50);
+
+            fill(0);
+            noStroke(0);
+            ellipse(474, 319, 30, 30);
+
+//mouth
+            noFill(0);
+            stroke(0);
+            strokeWeight(9);
+            arc(391, 580, 150, 100, 500, 376 );
+
+//eyebrows
+          line(430, 330, 230, 220);
+
+      }
+
+
+
+
+
 
 
 
@@ -58,11 +104,11 @@ function draw() {
 
 
 
-fill(210, 105, 3)
+    fill(210, 105, 3)
     ellipse(300, 250, 400, 400);
     stroke(0);
 
-    //hair
+//hair
     fill(0);
     noStroke(0);
     ellipse(154, 92, 100, 100);
@@ -158,7 +204,7 @@ fill(210, 105, 3)
        strokeWeight(5);
           arc(375, 205, 80, 80, 5, 5 );
 
-          //eyebrows//
+//eyebrows//
 
           noFill(0);
           stroke(0);
