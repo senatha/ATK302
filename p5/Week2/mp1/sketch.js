@@ -12,91 +12,78 @@ function draw() {
   background('pink');
 
 
+
+
+
+
   if (mouseIsPressed) {
 
+//string
+
+    line(85, 287, 85, 75);
+
+
 //horns
-    //arc(389, 237, 500, 500, 0, PI + QUARTER_PI, PIE)
+    triangle(82,54, 498, 85, 280,40);
+    triangle(82,54, 498, 85, 280, 10);
+
 
 
 //face
-    fill(178, 34, 34)
-    stroke(0)
-    ellipse(400, 400, 400, 400);
+    fill(178, 34, 34);
+    strokeWeight(8);
+    ellipse(300, 250, 400, 400);
 
 
-    //nosefill('black')
-      fill(0);
-      noStroke(0);
-      ellipse(347, 430, 66, 45);
+//nosefill('black')
+noFill(0);
+stroke(0);
+strokeWeight(9);
+arc(425, 165, 150, 100, 500, 376 );
 
-      fill(0)
-      noStroke(0)
-      ellipse(435, 430, 66, 45);
-
-    noFill(0);
-    stroke(3);
-      arc(389, 468, 90, 80, 106, 35 + QUARTER_PI, OPEN);
+noFill(0);
+stroke(0);
+strokeWeight(9);
+arc(268, 292, 150, 100, 100, 76 );
 
 
 
-//eyetwitch//
+
+
+//eyetwitch
         noFill(0);
         stroke(0);
-        strokeWeight(9);
-      //  arc(344, 409, 150, 100, 500, 376 );
+        strokeWeight(4);
 
 
 
-        //eyeballs//
+//eyeballs//
             fill('white');
             stroke(0);
             strokeWeight(5);
-            arc(334, 323, 80, 80, 5, 5);
+            arc(244, 214, 100, 100, 5, 5);
 
-               fill('white');
-               stroke(0);
-               strokeWeight(5);
-              arc(480, 319, 80, 80, 5, 5 );
+            fill('white');
+            stroke(0);
+            strokeWeight(5);
+            arc(377, 205, 80, 80, 5, 5 );
 
 
-        //eyes//
+  //eyes//
             fill(0);
             noStroke(0);
-            ellipse(340, 323, 50, 50);
+            ellipse(243, 208, 68, 68);
 
             fill(0);
             noStroke(0);
-            ellipse(474, 319, 30, 30);
+            ellipse(376, 211, 30, 30);
 
 //mouth
             noFill(0);
             stroke(0);
             strokeWeight(9);
-            arc(391, 580, 150, 100, 500, 376 );
 
-//eyebrows
-          line(430, 330, 230, 220);
-
-      }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          }
 
 
 
@@ -240,12 +227,7 @@ function draw() {
       strokeWeight(9);
       arc(268, 292, 150, 100, 100, 76 );}
 
-  //mouthcurve(5, 26, 5, 26, 30, 24, 73, 61); MOUTH
-     //line(401, 362, 270, 365);
 
-    // noFill(0);
-    // stroke(0);
-    // curve(5, 36, 401, 362, 233, 391, 40, 25);
 
      fill(0);
      arc(279, 374, 104, 95, 0, PI + QUARTER_PI, CHORD)
