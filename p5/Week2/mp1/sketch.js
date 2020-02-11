@@ -25,7 +25,8 @@ function draw() {
 
 //horns
     triangle(82,54, 498, 85, 280,40);
-    triangle(82,54, 498, 85, 280, 10);
+    triangle(82,54, 498, 85, 280, 1
+      0);
 
 
 
