@@ -3,9 +3,6 @@ let mic;
 function setup() {
   createCanvas(710, 200);
 
-  function touchStarted() {
-    getAudioContext().resume();
-}
   // Create an Audio input
   mic = new p5.AudioIn();
 
@@ -25,8 +22,12 @@ function draw() {
   stroke(0);
 
   // Draw an ellipse with height based on volume
-  let h = map(vol, 0, 1, height, 30);
+  let h = map(vol, 0, 1, height, 90);
   ellipse(width / 2, h - 25, 50, 50);
 
 
+}
+
+function touchStarted() {
+  getAudioContext().resume();
 }
