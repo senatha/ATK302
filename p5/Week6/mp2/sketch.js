@@ -1,4 +1,5 @@
 var myState = 0 ;
+var timer = 0;
 
 function setup() {
   // put setup code here
@@ -14,18 +15,40 @@ function draw() {
 switch(myState) {
   case 0:
   background('red');
-  text('WELCOME TO MY WORLD') ;
+  text("WELCOME TO MY WORLD", 100, 100) ;
+  timer = timer + 1;
+  if (timer > 200) {
+    myState = 1 ;
+    timer = 0 ;
+  }
+
   break ;
 
   case 1:
   background('green');
-  text('My name is Shazea and theres something you should know about me')
+  text("My name is Shazea and theres something you should know about me", 100, 100);
   break ;
 
   case 2:
   background('blue');
-  text('I love elephants')
+  text("I love elephants", 100, 100);
   break ;
+
+  case 3:
+  background('blue');
+  text("I love elephants", 100, 100);
+  break ;
+
+  case 4:
+  background('blue');
+  text("I love elephants", 100, 100);
+  break ;
+
+  case 5:
+  background('blue');
+  text("I love elephants", 100, 100);
+  break ;
+
 
 }
 }
