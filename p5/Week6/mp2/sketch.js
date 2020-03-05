@@ -51,16 +51,19 @@ function draw() {
 
     case 2:
       background('brown');
+        textSize(48);
       text("I love elephants", 100, 100);
       break;
 
     case 3:
       background('pink');
+      textSize(24);
       text("While the first human fossils are dated back to 2 to 6 million years ago", 100, 100, 600, 600);
       break;
 
     case 4:
       background('brown');
+        textSize(24);
       text("The first elephant ancestors are dated back to 55 million years ago", 100, 100, 600, 600);
       break;
 
@@ -74,6 +77,7 @@ function draw() {
   background('blue');
   image(fingers, 0, 0, width, height);
   fill('white');
+    textSize(48);
   text("Show them respect", 100, 100, 600, 600);
   break;
 
