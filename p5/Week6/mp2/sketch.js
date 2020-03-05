@@ -26,7 +26,7 @@ function draw() {
 
   switch (myState) {
     case 0:
-      background('red');
+      background('pink');
       textSize(48);
       textFont(boldfont);
       text("WELCOME TO MY WORLD", x, 100);
@@ -44,23 +44,23 @@ function draw() {
       break;
 
     case 1:
-      background('green');
+      background('pink');
       textSize(24);
       text("My name is Shazea and theres something you should know about me", 100, 100, 600, 600);
       break;
 
     case 2:
-      background('blue');
+      background('brown');
       text("I love elephants", 100, 100);
       break;
 
     case 3:
-      background('blue');
+      background('pink');
       text("While the first human fossils are dated back to 2 to 6 million years ago", 100, 100, 600, 600);
       break;
 
     case 4:
-      background('blue');
+      background('brown');
       text("The first elephant ancestors are dated back to 55 million years ago", 100, 100, 600, 600);
       break;
 
@@ -74,7 +74,7 @@ function draw() {
   background('blue');
   image(fingers, 0, 0, width, height);
   fill('white');
-  text("I love elephants", 100, 100);
+  text("Show them respect", 100, 100, 600, 600);
   break;
 
 case 7:
