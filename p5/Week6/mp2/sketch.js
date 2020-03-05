@@ -74,7 +74,7 @@ function draw() {
       break;
 
   case 6:
-  background('blue');
+  background('brown');
   image(fingers, 0, 0, width, height);
   fill('white');
     textSize(48);
