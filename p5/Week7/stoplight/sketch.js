@@ -18,19 +18,19 @@ if (timer = 60)
 
 myState = myState + 1 ;
 timer = 0 ;
-}
+
 
 if(myState = 3)
 
 myState = 0 ;
 
-
+}
 
 switch (myState) {
-  
+
   case 0:
   fill(97, 255, 69, 100)
-  ellipse(width/2, height/2, 150, 150)
+  ellipse(width/2, height/2, 150, 150);
   console.log("green light");
   break;
 
@@ -46,5 +46,4 @@ switch (myState) {
 
  break;
 
-}
 }
