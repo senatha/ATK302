@@ -50,4 +50,3 @@ function draw() {
     //favorite
     //favorite food
   }
-}
