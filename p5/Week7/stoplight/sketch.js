@@ -7,6 +7,7 @@ function setup() {
 
   rectMode('center') ;
   ellipse('center') ;
+
 }
 
 function draw() {
