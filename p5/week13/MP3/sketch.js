@@ -2,9 +2,12 @@ var cars = [];
 var frogPos;
 var myState = 0;
 var maxCars = 20;
-//var  maxTimer = 30+60 ;
-
+//var  maxTimer = 30*60 ;
 //var timer = maxTimer ;
+var covid;
+var germs;
+
+
 
 
 
@@ -21,43 +24,43 @@ function setup() {
   frogPos = createVector(400, height - 100);
 
   textAlign(CENTER);
+  imageMode(CENTER);
+  covid = loadImage("assets/covid.png");
+  germs = loadImage("assets/germs.png");
+
 
 }
 
 
-function draw(){
+function draw() {
 
   switch (myState) {
 
-    case 0: //menu
-      background('red') ;
-      fill('white') ;
-      textSize(24) ;
-      text("DON'T CATCH COVID19. CLICK TO START", width/2, height/2) ;
 
-      break ;
+    case 0: //menu
+      background('red');
+      fill('white');
+      textSize(24);
+      text("DON'T CATCH COVID19. CLICK TO START", width / 2, height / 2);
+
+      break;
 
     case 1: //game state
-    game();
+      game();
 
-  //  timer = timer - 1 ;
-  //  if (timer <= 0) {
-    //  timer = maxTimer;
-      //myState = 2 ;
-
-    break ;
+      break;
 
 
     case 2: //win state
-    background('yellow' ) ;
-    text("NICE, YOU AVOIDED GETTING SICK!", width/2, height/2) ;
-    break ;
+      background('yellow');
+      text("NICE, YOU AVOIDED GETTING SICK!", width / 2, height / 2);
+      break;
 
 
     case 3: //lose
-    background('purple') ;
-    text("YOU FELL ILL! TRY AGAIN", width/2, height/2) ;
-    break  ;
+      background('purple');
+      text("YOU FELL ILL! TRY AGAIN", width / 2, height / 2);
+      break;
 
   }
 
@@ -66,35 +69,35 @@ function draw(){
 }
 
 function mouseReleased() {
-  switch(myState) {
+  switch (myState) {
 
     case 0:
-    myState = 1 ;
-    break ;
+      myState = 1;
+    
+      break;
 
     case 2:
 
-//  timer = maxTimer;
+      // timer = maxTimer;
+      //  cars = [] ;
+      for (var i = 0; i < maxCars; i++) {
+        cars.push(new Car());
+      }
 
-  //  cars = [] ;
-    for (var i = 0; i < maxCars; i++) {
-      cars.push(new Car());
-    }
-
-    myState = 0 ;
-    break ;
+      myState = 0;
+      break;
 
     case 3:
 
-  //  timer = maxTimer;
+      //   timer = maxTimer;
 
-    //cars = [] ;
-    for (var i = 0; i < maxCars; i++) {
-      cars.push(new Car());
-    }
+      //cars = [] ;
+      for (var i = 0; i < maxCars; i++) {
+        cars.push(new Car());
+      }
 
-    myState = 0 ;
-    break ;
+      myState = 0;
+      break;
 
   }
 }
@@ -115,12 +118,13 @@ function game() {
   }
 
 
-if (cars.length == 10) {
-  myState = 3 ;
-}
+  if (cars.length == 10) {
+    myState = 3;
+  }
   //frog
-  fill('green');
-  ellipse(frogPos.x, frogPos.y, 50, 50);
+  //  fill('green');
+  //ellipse(frogPos.x, frogPos.y, 50, 50);
+  image(covid, frogPos.x, frogPos.y, 40, 40);
   checkForKeys();
 
 }
@@ -146,8 +150,9 @@ function Car() {
   //methods
 
   this.display = function() {
-    fill(this.r, this.g, this.b);
-    rect(this.pos.x, this.pos.y, 30, 30);
+    //  fill(this.r, this.g, this.b);
+    //rect(this.pos.x, this.pos.y, 30, 30);
+    image(germs, this.pos.x, this.pos.y, 40, 40);
 
   }
 

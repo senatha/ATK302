@@ -3,13 +3,8 @@ var frogPos;
 var myState = 0;
 var maxCars = 20;
 var  maxTimer = 30*60 ;
-var song1 ;
-var covid ;
 
-//function preload(){
-  //song1 = loadSound
-}
-//var timer = maxTimer ;
+var timer = maxTimer ;
 
 
 
@@ -26,8 +21,6 @@ function setup() {
   frogPos = createVector(400, height - 100);
 
   textAlign(CENTER);
-  imageMode(CENTER);
-  covid = loadImage("Assets/covid.png")
 
 }
 
@@ -126,9 +119,8 @@ if (cars.length == 10) {
   myState = 3 ;
 }
   //frog
-  //fill('green');
-  //ellipse(frogPos.x, frogPos.y, 50, 50);
-  image(covid, frogPos.x, frogPos.y);
+  fill('green');
+  ellipse(frogPos.x, frogPos.y, 50, 50);
   checkForKeys();
 
 }
