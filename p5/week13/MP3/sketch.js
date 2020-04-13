@@ -2,13 +2,8 @@ var cars = [];
 var frogPos;
 var myState = 0;
 var maxCars = 20;
-var  maxTimer = 30*60 ;
-var song1 ;
-var covid ;
+//var  maxTimer = 30+60 ;
 
-//function preload(){
-  //song1 = loadSound
-}
 //var timer = maxTimer ;
 
 
@@ -26,8 +21,6 @@ function setup() {
   frogPos = createVector(400, height - 100);
 
   textAlign(CENTER);
-  imageMode(CENTER);
-  covid = loadImage("Assets/covid.png")
 
 }
 
@@ -47,10 +40,10 @@ function draw(){
     case 1: //game state
     game();
 
-   timer = timer - 1 ;
-    if (timer <= 0) {
-      timer = maxTimer;
-      myState = 2 ;
+  //  timer = timer - 1 ;
+  //  if (timer <= 0) {
+    //  timer = maxTimer;
+      //myState = 2 ;
 
     break ;
 
@@ -81,9 +74,9 @@ function mouseReleased() {
 
     case 2:
 
-  timer = maxTimer;
+//  timer = maxTimer;
 
-    cars = [] ;
+  //  cars = [] ;
     for (var i = 0; i < maxCars; i++) {
       cars.push(new Car());
     }
@@ -93,9 +86,9 @@ function mouseReleased() {
 
     case 3:
 
-    timer = maxTimer;
+  //  timer = maxTimer;
 
-    cars = [] ;
+    //cars = [] ;
     for (var i = 0; i < maxCars; i++) {
       cars.push(new Car());
     }
@@ -126,9 +119,8 @@ if (cars.length == 10) {
   myState = 3 ;
 }
   //frog
-  //fill('green');
-  //ellipse(frogPos.x, frogPos.y, 50, 50);
-  image(covid, frogPos.x, frogPos.y);
+  fill('green');
+  ellipse(frogPos.x, frogPos.y, 50, 50);
   checkForKeys();
 
 }
