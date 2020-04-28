@@ -10,6 +10,7 @@ var temperature = 0;
 function setup() {
   createCanvas(400, 400);
 
+
   // HERE Is the call to get the weather. PLEASE PUT YOUR OWN ID IN HERE!!!
   // MINE WILL STOP WORKING IF EVERYONE USES IT!!!
 
@@ -42,13 +43,14 @@ function draw() {
       break;
 
     case 1:
-    background(200) ;
+    background('lightblue') ;
+    fill('yellow');
+    text("We Have Weather", 20, 20) ;
     fill('black');
-    text("we have weather", 20, 20) ;
-    text("the temperature is" + weather.main.temp, 20, 40);
-    text("the humidity is" + weather.main.humidity, 20, 60);
-    text("the windspeed is" + weather.wind.speed, 20, 80);
-
+    text("The Temperature is " + weather.main.temp, 20, 50);
+    text("The Humidity is " + weather.main.humidity, 20, 80);
+    text("The Windspeed is " + weather.wind.speed, 20, 110);
+    textSize(20);
     fill('white');
     noStroke();
     x = x + ws/3 ;
