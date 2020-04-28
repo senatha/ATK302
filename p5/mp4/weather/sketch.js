@@ -55,6 +55,14 @@ function draw() {
     if (x > width) x = 0 ;
     ellipse(x, 250, 200, 100);
 
+    fill('white');
+    noStroke();
+    x = x + ws/3 ;
+    if (x > width) x = 0 ;
+    ellipse(x, 220, 130, 80);
+
+
+
     fill('red');
     var tmp = 0 ;
     tmp = map(temperature, -10, 200, 2, height-10);
