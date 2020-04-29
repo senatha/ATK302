@@ -1,4 +1,3 @@
-// Spring 2019 Curtis Stieger worked on this
 
 var fence;
 var locationData;
@@ -8,8 +7,8 @@ var places = [];
 var reggieImg;
 
 function preload() {
-  locationData = getCurrentPosition();
-  reggieImg = loadImage('assets/reggie.jpg');
+ locationData = getCurrentPosition();
+ reggieImg = ('assets/reggie.jpg')
   // TURN "reggieImg;" into "reggieImg = [];" to create an array of different images
   //reggieImg = loadImage('assets/reggie1.jpg'); //these will change to images of pics in front of the buildings for welcome week
   //reggieImg[2] = loadImage('assets/reggie2.jpg');
