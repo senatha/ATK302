@@ -1,8 +1,5 @@
- //For mobile phones - accesses accelerometer.
-//Make sure you turn on orientation lock on your iPhone or Android device. */
-
 var alpha, beta, gamma; // orientation data
-var covid;
+var bunnyImage;
 var xPosition = 0;
 var yPosition = 0;
 var x = 0; // acceleration data
@@ -18,7 +15,7 @@ function setup() {
   beta = 0;
   gamma = 0;
 
-  covid = loadImage("assets/covid.png");
+  bunnyImage = loadImage("assets/bunny.jpg");
   imageMode(CENTER);
   rectMode(CENTER);
 
@@ -26,7 +23,7 @@ function setup() {
 
 function draw() {
 
-  background('orange'); // light blue
+  background('#c6f5ff'); // light blue
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
@@ -40,7 +37,7 @@ function draw() {
 
   rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
-  image(covid, 0, 0, 500, 500);
+  image(bunnyImage, 0, 0, 500, 500);
   //  	rect(0, 0, 100, 100) ;
   pop();
 
@@ -50,13 +47,13 @@ function draw() {
   textAlign(LEFT);
   textSize(20);
   fill('black');
-  text("Here:", 25, 25);
+  text("orientation data:", 25, 25);
   textSize(15);
   text("alpha: " + alpha, 25, 50);
   text("beta: " + beta, 25, 70);
   text("gamma: " + gamma, 25, 90);
   textSize(20);
-  text("There:", 25, 125);
+  text("acceleration data:", 25, 125);
   textSize(15);
   text("x = " + x.toFixed(2), 25, 150); // .toFixed means just show (x) decimal places
   text("y = " + y.toFixed(2), 25, 170);
@@ -65,8 +62,9 @@ function draw() {
   // MORE DECORATIONS - write that pretty ATK type on top.
   fill('white');
   noStroke();
+  textSize(300);
   textAlign(CENTER);
-  text("STAY HOME",width / 4, height / 4);
+  text("atk", width / 2, height / 2);
 
 }
 
