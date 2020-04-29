@@ -65,9 +65,9 @@ function draw() {
   // MORE DECORATIONS - write that pretty ATK type on top.
   fill('white');
   noStroke();
-  textSize(300);
+  textSize(200);
   textAlign(CENTER);
-  text("atk", width / 2, height / 2);
+  text("COVID-19", width / 2, height / 2);
 
 }
 
