@@ -40,7 +40,7 @@ function draw() {
 
   rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
-image(handshake, 0, 0, 500, 500);
+image(handshake, 0, 0, 350, 350);
   //  	rect(0, 0, 100, 100) ;
   pop();
 
@@ -65,9 +65,9 @@ image(handshake, 0, 0, 500, 500);
   // MORE DECORATIONS - write that pretty ATK type on top.
   fill('white');
   noStroke();
-  textSize(100);
+  textSize(200);
   textAlign(CENTER);
-  text("Hi!", width / 2, 300);
+  text("Hi!", width / 2, 400);
 
 }
 
