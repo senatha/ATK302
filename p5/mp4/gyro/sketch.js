@@ -62,14 +62,12 @@ function draw() {
   text("y = " + y.toFixed(2), 25, 170);
   text("z = " + z.toFixed(4), 25, 190);
 
-
   // MORE DECORATIONS - write that pretty ATK type on top.
-  text("STAY HOME");
   fill('white');
   noStroke();
   textSize(9);
   textAlign(CENTER);
-
+  text("STAY HOME",width / 4, height / 4);
 
 }
 
