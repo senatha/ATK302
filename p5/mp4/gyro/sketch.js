@@ -40,7 +40,7 @@ function draw() {
 
   rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
-image(handshake, 0, 0, 350, 350);
+image(handshake, 0, 0, 100, 100);
   //  	rect(0, 0, 100, 100) ;
   pop();
 
