@@ -67,7 +67,7 @@ function draw() {
   noStroke();
   textSize(9);
   textAlign(CENTER);
-  text("STAY HOME", width / 2, height / 2);
+  text("STAY HOME",width / 4, height / 4);
 
 }
 
