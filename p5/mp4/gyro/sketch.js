@@ -65,9 +65,8 @@ function draw() {
   // MORE DECORATIONS - write that pretty ATK type on top.
   fill('white');
   noStroke();
-  textSize(100);
   textAlign(CENTER);
-  text("STAY HOME",width / 2, height / 2);
+  text("STAY HOME",width / 4, height / 4);
 
 }
 
