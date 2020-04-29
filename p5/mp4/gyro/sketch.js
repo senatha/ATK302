@@ -2,7 +2,7 @@
 Make sure you turn on orientation lock on your iPhone or Android device. */
 
 var alpha, beta, gamma; // orientation data
-var covid;
+var handshake
 var xPosition = 0;
 var yPosition = 0;
 var x = 0; // acceleration data
@@ -18,7 +18,7 @@ function setup() {
   beta = 0;
   gamma = 0;
 
-  covid = loadImage("assets/covid.jpg");
+  handshake = loadImage("assets/handshake.png");
   imageMode(CENTER);
   rectMode(CENTER);
 
@@ -40,7 +40,7 @@ function draw() {
 
   rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
-  image(covid, 0, 0, 500, 500);
+image(handshake, 0, 0, 500, 500);
   //  	rect(0, 0, 100, 100) ;
   pop();
 
