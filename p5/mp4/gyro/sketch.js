@@ -67,7 +67,7 @@ function draw() {
   noStroke();
   textSize(100);
   textAlign(CENTER);
-  text("Hi!", width / 2, height / 2);
+  text("Hi!", width / 2, 300);
 
 }
 
