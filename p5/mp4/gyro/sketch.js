@@ -2,7 +2,7 @@
 Make sure you turn on orientation lock on your iPhone or Android device. */
 
 var alpha, beta, gamma; // orientation data
-var bunnyImage;
+var covid;
 var xPosition = 0;
 var yPosition = 0;
 var x = 0; // acceleration data
@@ -18,7 +18,7 @@ function setup() {
   beta = 0;
   gamma = 0;
 
-  bunnyImage = loadImage("assets/bunny.jpg");
+  covid = loadImage("assets/covid.jpg");
   imageMode(CENTER);
   rectMode(CENTER);
 
@@ -26,7 +26,7 @@ function setup() {
 
 function draw() {
 
-  background('#c6f5ff'); // light blue
+  background('orange'); // light blue
 
   // the map command !!!!
   // takes your variable and maps it from range 1 to range 2
@@ -40,7 +40,7 @@ function draw() {
 
   rotate(radians(alpha)); // using alpha in here so it doesn't feel bad
 
-  image(bunnyImage, 0, 0, 500, 500);
+  image(covid, 0, 0, 500, 500);
   //  	rect(0, 0, 100, 100) ;
   pop();
 
@@ -65,9 +65,9 @@ function draw() {
   // MORE DECORATIONS - write that pretty ATK type on top.
   fill('white');
   noStroke();
-  textSize(200);
+  textSize(300);
   textAlign(CENTER);
-  text("COVID-19", width / 2, height / 2);
+  text("atk", width / 2, height / 2);
 
 }
 
